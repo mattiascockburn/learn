@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-simple
+  namespace: default
+spec:
+  containers:
+  - name: nginx-simple
+    image: nginx
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
